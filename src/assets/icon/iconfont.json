@@ -1,0 +1,128 @@
+{
+  "id": "1825992",
+  "name": "协议",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "215853",
+      "name": "refresh",
+      "font_class": "refresh",
+      "unicode": "e831",
+      "unicode_decimal": 59441
+    },
+    {
+      "icon_id": "16522757",
+      "name": "云服务",
+      "font_class": "cloudService",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "1049917",
+      "name": "config",
+      "font_class": "collectConfigure",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "5880273",
+      "name": "状态",
+      "font_class": "collectStatus",
+      "unicode": "e66e",
+      "unicode_decimal": 58990
+    },
+    {
+      "icon_id": "12241473",
+      "name": "data-collection",
+      "font_class": "dataCollection",
+      "unicode": "e6cd",
+      "unicode_decimal": 59085
+    },
+    {
+      "icon_id": "12521828",
+      "name": "log",
+      "font_class": "logs",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "13302734",
+      "name": "Group 87",
+      "font_class": "variableGroup",
+      "unicode": "e6cf",
+      "unicode_decimal": 59087
+    },
+    {
+      "icon_id": "16631265",
+      "name": "设 置",
+      "font_class": "quickSetting",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "12026909",
+      "name": "sim卡管理",
+      "font_class": "simManagement",
+      "unicode": "e6f0",
+      "unicode_decimal": 59120
+    },
+    {
+      "icon_id": "10435269",
+      "name": "status",
+      "font_class": "status",
+      "unicode": "e6d7",
+      "unicode_decimal": 59095
+    },
+    {
+      "icon_id": "772969",
+      "name": "chart",
+      "font_class": "otaDashboard",
+      "unicode": "e658",
+      "unicode_decimal": 58968
+    },
+    {
+      "icon_id": "1106910",
+      "name": "版本升级",
+      "font_class": "deviceVersionStatus",
+      "unicode": "e633",
+      "unicode_decimal": 58931
+    },
+    {
+      "icon_id": "1162182",
+      "name": "记录 (2)",
+      "font_class": "alarmRecord",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "8887811",
+      "name": "nav-升级包管理",
+      "font_class": "upgradePackage",
+      "unicode": "e85a",
+      "unicode_decimal": 59482
+    },
+    {
+      "icon_id": "9486292",
+      "name": "通知人",
+      "font_class": "alarmNotifier",
+      "unicode": "e648",
+      "unicode_decimal": 58952
+    },
+    {
+      "icon_id": "10330617",
+      "name": "alarm",
+      "font_class": "alarms",
+      "unicode": "e657",
+      "unicode_decimal": 58967
+    },
+    {
+      "icon_id": "11488305",
+      "name": "product",
+      "font_class": "products",
+      "unicode": "e788",
+      "unicode_decimal": 59272
+    }
+  ]
+}

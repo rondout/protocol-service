@@ -1,0 +1,36 @@
+export default {
+    menu: {
+        status: "Status",
+        quickSetting: "Quick Settings",
+        networkSetting: "Network Settings",
+        customApplication: "Custom Application",
+        dataCollection: "Data Collection",
+        collectStatus: "Collect Status",
+        collectConfigure: "Collect Configure",
+        variableGroup: "Variable Group",
+        cloudService: "Cloud Service",
+        logs: "Logs",
+        hardwareResources: "Hardware Resources",
+        system: "System",
+        quit: "Quit"
+    },
+    dataCollection: {
+        deviceList: "Device List",
+        variableList: "Variable List",
+        deviceName: "Device Name",
+        status: "Status",
+        apiType: "Api Type",
+        protocol: "Protocol",
+        searil: "Searil",
+        overtime: "Ovrertime",
+        variableName: "Variable Name",
+        group: "Group",
+        assignedDevice: "Assigned Device",
+        register: "Register",
+        variableValue: "Variable Value",
+        updateTime: "Update Time",
+        operation: "Operation",
+        refresh: "Refresh",
+        read: "Read",
+    }
+}

@@ -1,0 +1,36 @@
+export default {
+    menu: {
+        status: "状态",
+        quickSetting: "快速设置",
+        networkSetting: "网络设置",
+        customApplication: "客制应用",
+        dataCollection: "数据采集",
+        collectStatus: "采集状态",
+        collectConfigure: "采集配置",
+        variableGroup: "变量分组",
+        cloudService: "云服务",
+        logs: "日志",
+        hardwareResources: "硬件资源",
+        system: "系统",
+        quit: "退出"
+    },
+    dataCollection: {
+        deviceList: "设备列表",
+        variableList: "变量列表",
+        deviceName: "设备名称",
+        status: "状态",
+        apiType: "接口类型",
+        protocol: "协议",
+        searil: "串口",
+        overtime: "超时时间",
+        variableName: "变量名称",
+        group: "分组",
+        assignedDevice: "所属设备",
+        register: "寄存器",
+        variableValue: "变量值",
+        updateTime: "更新时间",
+        operation: "操作",
+        refresh:"刷新",
+        read:"读取",
+    }
+}

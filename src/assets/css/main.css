@@ -1,0 +1,57 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.index {
+  height: 100%;
+}
+
+.ant-layout {
+  height: 100%;
+}
+
+.ant-layout-header {
+  padding: 0 20px;
+}
+
+.iconfont {
+  font-size: 24px !important;
+  width: 24px;
+  margin-right: 2px;
+}
+
+.icon-cloudService {
+  font-size: 20px !important;
+}
+
+.table-button {
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.table-button-container,
+.button-icon {
+  display: flex;
+  align-items: center;
+}
+
+.button-icon>.iconfont{
+  font-size: 20px !important;
+  margin-right: 0 !important;
+}
+
+.table-button:hover {
+  background-color: #eee;
+}
+
+.ant-select {
+  width: 200px;
+}
