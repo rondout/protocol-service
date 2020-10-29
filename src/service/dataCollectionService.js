@@ -27,6 +27,20 @@ export default {
                 { id: 7, variableName: "搅拌7", group: '注塑', assignedDevice: "三菱", register: "M", variableValue: "16", updateTime: 1603958318383 },
             ])
         })
+    },
+
+    getGroups() {
+        return new Promise((resolve, reject) => {
+            resolve([
+                { id: 1, groupName: "搅拌1", collectInterval: '40s', reportInterval: "60", dataReport: true },
+                { id: 2, groupName: "搅拌2", collectInterval: '40s', reportInterval: "60", dataReport: false },
+                { id: 3, groupName: "搅拌3", collectInterval: '40s', reportInterval: "60", dataReport: true },
+                { id: 4, groupName: "搅拌4", collectInterval: '40s', reportInterval: "60", dataReport: false },
+                { id: 5, groupName: "搅拌5", collectInterval: '40s', reportInterval: "60", dataReport: true },
+                { id: 6, groupName: "搅拌6", collectInterval: '40s', reportInterval: "60", dataReport: true },
+                { id: 7, groupName: "搅拌7", collectInterval: '40s', reportInterval: "60", dataReport: true },
+            ])
+        })
     }
 
 }

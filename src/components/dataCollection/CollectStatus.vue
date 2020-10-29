@@ -13,7 +13,7 @@
       >
     </div>
     <div class="data-collection-table-container">
-      <div style="margin-top: 60px" v-if="btnSelected === 'device'">
+      <div style="margin-top: 40px" v-if="btnSelected === 'device'">
         <a-table
           size="middle"
           :rowKey="(record) => record.id"
@@ -207,6 +207,7 @@ export default {
 <style scoped>
 .collect-status-headbtns {
   margin: 20px;
+  margin-bottom: 0;
 }
 /* .data-collection-table-container {
   margin-top: 40px;

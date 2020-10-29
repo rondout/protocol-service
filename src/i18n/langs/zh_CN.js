@@ -30,7 +30,16 @@ export default {
         variableValue: "变量值",
         updateTime: "更新时间",
         operation: "操作",
-        refresh:"刷新",
-        read:"读取",
+        refresh: "刷新",
+        read: "读取",
+        groupList: "分组列表",
+        addNewDevice: "新增设备",
+        groupName: "组名",
+        collectInterval: "采集间隔",
+        reportInterval: "上报间隔",
+        dataReport: "数据上报",
+        isTrue:"是",
+        isFalse:"否",
+        
     }
 }
