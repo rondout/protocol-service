@@ -119,6 +119,7 @@ export default {
         {
           title: "ID",
           dataIndex: "id",
+          sorter:(a, b) => a.id > b.id
         },
         {
           title: this.$t("dataCollection.deviceName"),
@@ -205,10 +206,10 @@ export default {
 </script>
 
 <style scoped>
-.collect-status-headbtns {
+/* .collect-status-headbtns {
   margin: 20px;
   margin-bottom: 0;
-}
+} */
 /* .data-collection-table-container {
   margin-top: 40px;
 } */

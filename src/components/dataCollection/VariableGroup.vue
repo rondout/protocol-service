@@ -2,8 +2,8 @@
   <div class="variable-group-container">
     <div class="head-buttons">
       <a-button>{{ $t("dataCollection.groupList") }}</a-button>
-      <a-button type="primary">{{
-        $t("dataCollection.addNewDevice")
+      <a-button @click="openDrawer" type="primary">{{
+        $t("dataCollection.addNewGroup")
       }}</a-button>
     </div>
     <div class="variable-table-container">
@@ -25,29 +25,40 @@
               type="primary"
               style="margin-right: 10px"
               @click="modifyGroup(record)"
-              >修改</a-button
+              >{{ $t("dataCollection.modify") }}</a-button
             >
-            <a-button @click="deleteGroup(record)" size="small" type="primary"
-              >删除</a-button
+            <a-button
+              @click="deleteGroup(record)"
+              size="small"
+              type="danger"
+              >{{ $t("dataCollection.delete") }}</a-button
             >
           </div>
         </template>
       </a-table>
     </div>
-    <AddGroupModal :visible="true" />
+    <ConfigGroupModal
+      :details="modalDetails"
+      :visible="visible"
+      :modalTitle="modalTitle"
+      @closeDrawer="closeDrawer"
+    />
   </div>
 </template>
 
 <script>
 import dataCollectionService from "@/service/dataCollectionService";
-import AddGroupModal from "@/components/dataCollection/AddGroupModal";
+import ConfigGroupModal from "@/components/dataCollection/ConfigGroupModal";
 export default {
-  components: { AddGroupModal },
+  components: { ConfigGroupModal },
   data() {
     return {
       groupList: [],
       dataCollectionService,
       columns: [],
+      visible: false,
+      modalDetails: {},
+      modalTitle: this.$t("dataCollection.addNewGroup"),
     };
   },
   methods: {
@@ -57,10 +68,32 @@ export default {
       });
     },
     modifyGroup(record) {
-      console.log("modifyGroup", record);
+      this.modalTitle = this.$t("dataCollection.modifyGroup");
+      this.modalDetails = record;
+      this.visible = true;
     },
     deleteGroup(record) {
-      console.log("deleteGroup", record);
+      const that = this;
+      this.$confirm({
+        title:
+          that.$t("dataCollection.deleteGroupTitle")[0] +
+          record.groupName +
+          that.$t("dataCollection.deleteGroupTitle")[1],
+        centered: true,
+        content: that.$t("dataCollection.deleteGroupContent"),
+        onOk() {
+          // 发起删除请求
+        },
+        onCancel() {},
+      });
+    },
+    closeDrawer() {
+      this.visible = false;
+    },
+    openDrawer() {
+      this.modalDetails = {};
+      this.modalTitle = this.$t("dataCollection.addNewGroup");
+      this.visible = true;
     },
     refresh() {},
     initColumns() {

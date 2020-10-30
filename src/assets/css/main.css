@@ -55,11 +55,3 @@ body {
 .ant-select {
   width: 200px;
 }
-.ant-modal{
-  position: static !important;
-}
-
-.ant-modal-wrap{
-  display: flex;
-  align-items: center;
-}
