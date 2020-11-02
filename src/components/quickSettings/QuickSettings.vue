@@ -9,6 +9,7 @@
         >{{ v }}</a-button
       >
     </div>
+    <a-input type="color" @change="onChange"></a-input>
   </div>
 </template>
 
@@ -34,6 +35,9 @@ export default {
     };
   },
   methods: {
+    onChange(e) {
+      this.changeColor(e.target.value);
+    },
     changeColor(color) {
       window.less.modifyVars({
         "primary-color": color,
