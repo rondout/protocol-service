@@ -1,7 +1,7 @@
 <template>
   <div class="collect-configure-container">
     <div class="collect-configure-header">
-      <a-button class="header-buttons" type="primary">{{
+      <a-button @click="rebootCollectProgram" class="header-buttons" type="primary">{{
         $t("dataCollection.rebootCollectProgram")
       }}</a-button>
       <a-button class="header-buttons" type="primary">{{
@@ -124,6 +124,16 @@ export default {
         .catch((err) => {
           console.log(err);
         });
+    },
+    rebootCollectProgram() {
+      const that = this;
+      that.$confirm({
+        title:"确定重启采集程序吗？",
+        centered:true,
+        onOk(){
+          console.log("发送重启请求");
+        }
+      })
     },
     initDeviceColumns() {
       this.deviceVolumns = [

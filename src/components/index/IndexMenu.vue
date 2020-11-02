@@ -14,18 +14,18 @@
         <a-menu-item v-if="!v.children" :key="v.path">
           <i :class="'iconfont icon-' + v.name"></i>
           <a-icon style="display: none" type="pie-chart" />
-          <span>{{ $t('menu.' + v.name)}}</span>
+          <span>{{ $t("menu." + v.name) }}</span>
         </a-menu-item>
         <a-sub-menu @titleClick="subMenuChange" v-else :key="v.path">
           <span style="display: flex; align-items: center" slot="title">
             <i :class="'iconfont icon-' + v.name"></i>
             <a-icon style="display: none" type="pie-chart" />
-            <span>{{ $t('menu.' + v.name)}}</span>
+            <span>{{ $t("menu." + v.name) }}</span>
           </span>
           <a-menu-item v-for="item of v.children" :key="item.path">
             <i :class="'iconfont icon-' + item.name"></i>
             <a-icon style="display: none" type="pie-chart" />
-            <span>{{ $t('menu.' + item.name) }}</span>
+            <span>{{ $t("menu." + item.name) }}</span>
           </a-menu-item>
         </a-sub-menu>
       </a-menu>
@@ -45,18 +45,18 @@
         <a-menu-item v-if="!v.children" :key="v.path">
           <i :class="'iconfont icon-' + v.name"></i>
           <a-icon style="display: none" type="pie-chart" />
-          <span>{{ $t('menu.' + v.name) }}</span>
+          <span>{{ $t("menu." + v.name) }}</span>
         </a-menu-item>
         <a-sub-menu @titleClick="subMenuChange" v-else :key="v.path">
           <span style="display: flex; align-items: center" slot="title">
             <i :class="'iconfont icon-' + v.name"></i>
             <a-icon style="display: none" type="pie-chart" />
-            <span>{{ $t('menu.' + v.name) }}</span>
+            <span>{{ $t("menu." + v.name) }}</span>
           </span>
           <a-menu-item v-for="item of v.children" :key="item.path">
             <i :class="'iconfont icon-' + item.name"></i>
             <a-icon style="display: none" type="pie-chart" />
-            <span>{{ $t('menu.' + item.name) }}</span>
+            <span>{{ $t("menu." + item.name) }}</span>
           </a-menu-item>
         </a-sub-menu>
       </a-menu>
@@ -125,5 +125,10 @@ export default {
 .index-menu-container {
   overflow-y: auto;
   height: calc(100% - 64px);
+}
+</style>
+<style scoped>
+.iconfont {
+  font-weight: bold;
 }
 </style>
