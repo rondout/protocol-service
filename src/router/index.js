@@ -20,7 +20,7 @@ const routes = [
       {
         path: 'quickSetting',
         name: 'QuickSetting',
-        component: () => import("@/components/index/IndexContent")
+        component: () => import("@/components/quickSettings/QuickSettings")
       },
       {
         path: 'dataCollection',
@@ -95,4 +95,5 @@ const router = new VueRouter({
   routes
 })
 
+console.log(process.env.NODE_ENV);
 export default router

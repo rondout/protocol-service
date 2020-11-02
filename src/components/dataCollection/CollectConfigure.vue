@@ -63,13 +63,13 @@
               $t("dataCollection.addNewVariable")
             }}</a-button>
             <a-button size="small" type="primary">{{
-              $t("dataCollection.addNewVariable")
+              $t("dataCollection.copyVariable")
             }}</a-button>
             <a-button size="small" type="primary">{{
-              $t("dataCollection.addNewVariable")
+              $t("dataCollection.editVariable")
             }}</a-button>
             <a-button size="small" type="primary">{{
-              $t("dataCollection.addNewVariable")
+              $t("dataCollection.deleteVariable")
             }}</a-button>
           </div>
           <div class="pagination">

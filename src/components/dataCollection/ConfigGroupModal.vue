@@ -5,12 +5,13 @@
       :title="modalTitle"
       :visible="visible"
       :destroyOnClose="true"
+      :maskClosable="false"
       :confirm-loading="confirmLoading"
       :okButtonProps="{ props: { disabled: ableToCreate() } }"
       @ok="handleOk"
       @cancel="handleCancel"
     >
-      <a-form :form="form" :label-col="{ span: 5 }" :wrapper-col="{ span: 16 }">
+      <a-form :form="form" :label-col="{ span: 6 }" :wrapper-col="{ span: 16 }">
         <a-form-item :label="$t('dataCollection.groupName')">
           <a-input
             v-decorator="[

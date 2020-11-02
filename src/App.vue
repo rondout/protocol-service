@@ -19,6 +19,11 @@ export default {
       },
     };
   },
+  created() {
+    if (localStorage.colors) {
+      window.less.modifyVars(JSON.parse(localStorage.colors));
+    }
+  },
   mounted() {
     window.a = this;
     testService
